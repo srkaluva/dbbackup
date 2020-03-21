@@ -3,8 +3,8 @@ from argparse import Action, ArgumentParser
 class DriveAction(Action):
     def __call__(self, parser, namespace, values, option_string=None):
         driver, destination = values
-        namespace.driver = driver.lower()
         namespace.destination = destination
+        namespace.driver = driver.lower()
 
 
 
